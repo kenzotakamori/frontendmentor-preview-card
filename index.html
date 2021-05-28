@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="preview-card">
+    <section class="preview-card_info">
+      <h2>Get <span>insights</span> that help your business grow.</h2>
+
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+
+      <ul>
+        <li><span>10k+</span><br> companies</li>
+        <li><span>314</span><br> templates</li>
+        <li><span>12m+</span><br> queries</li>
+      </ul>
+    </section>
+    <section class="preview-card_image">
+      <picture>
+        <source media="(min-width:750px)" srcset="images/image-header-desktop.jpg">
+        <source media="(max-width:750px)" srcset="images/image-header-mobile.jpg">
+        <img src="images/image-header-desktop.jpg" alt="Preview Card Image">
+      </picture>
+    </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marcelo Kenzo</a>.
+  </div>
+</body>
+</html>

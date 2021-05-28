@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+body {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  background-color: #090b1a;
+}
+
+.preview-card {
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: 1fr auto;
+  margin: 100px auto;
+  background-color: #1b1938;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .preview-card {
+    max-width: 90%;
+  }
+}
+.preview-card_info {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 60px;
+  padding-right: 80px;
+}
+@media (max-width: 800px) {
+  .preview-card_info {
+    text-align: center;
+    padding: 40px;
+    grid-row: 2/3;
+  }
+}
+.preview-card_info h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .preview-card_info h2 {
+    font-size: 2em;
+  }
+}
+.preview-card_info h2 span {
+  color: #aa5cdb;
+}
+.preview-card_info p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter", sans-serif;
+  padding-top: 40px;
+  line-height: 1.8em;
+  font-size: 1.1em;
+  margin: 0;
+}
+.preview-card_info ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-inline-start: 0;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .preview-card_info ul {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+.preview-card_info ul li {
+  color: rgba(255, 255, 255, 0.6);
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+@media (max-width: 800px) {
+  .preview-card_info ul li {
+    padding-top: 40px;
+  }
+}
+.preview-card_info ul li span {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8em;
+}
+.preview-card_image {
+  background-color: #aa5cdb;
+  border-radius: 0 10px 10px 0;
+}
+@media (max-width: 800px) {
+  .preview-card_image {
+    border-radius: 10px 10px 0 0;
+  }
+}
+.preview-card_image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 10px 10px 0;
+  opacity: 0.6;
+}
+@media (max-width: 800px) {
+  .preview-card_image img {
+    grid-row: 1/2;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
